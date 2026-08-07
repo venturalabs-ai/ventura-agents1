@@ -1,5 +1,9 @@
 # Ventura Agents
 
+![MIT](https://img.shields.io/github/license/chamseddinehiddoud/ventura-agents)
+![stars](https://img.shields.io/github/stars/chamseddinehiddoud/ventura-agents)
+![forks](https://img.shields.io/github/forks/chamseddinehiddoud/ventura-agents)
+
 Coleção de **10 super agentes de IA de negócio** para o mercado, com a
 identidade da família **Ventura.** — cada um especializado em uma função de
 alta demanda: vendas, marketing, suporte, recrutamento, dados, engenharia,
