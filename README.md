@@ -1,97 +1,76 @@
 # Ventura Agents
 
-![MIT](https://img.shields.io/github/license/chamseddinehiddoud/ventura-agents)
-![stars](https://img.shields.io/github/stars/chamseddinehiddoud/ventura-agents)
-![forks](https://img.shields.io/github/forks/chamseddinehiddoud/ventura-agents)
+[![License](https://img.shields.io/github/license/venturalabs-ai/ventura-agents)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/venturalabs-ai/ventura-agents)](https://github.com/venturalabs-ai/ventura-agents/stargazers)
+[![Forks](https://img.shields.io/github/forks/venturalabs-ai/ventura-agents)](https://github.com/venturalabs-ai/ventura-agents/forks)
 
-Coleção de **10 super agentes de IA de negócio** para o mercado, com a
-identidade da família **Ventura.** — cada um especializado em uma função de
-alta demanda: vendas, marketing, suporte, recrutamento, dados, engenharia,
-financeiro, projetos, social media e jurídico.
+Coleção de **10 agentes de IA especializados em funções de negócio**, estruturados como system prompts reutilizáveis e orientados a entregas, métricas, ferramentas e limites de autonomia.
 
-Cada agente é um **system prompt completo, plugável**: copie o arquivo, anexe
-como system prompt no seu modelo/plataforma (ChatGPT, Claude, Gemini, copilots
-empresariais) e adicione as ferramentas/APIs indicadas no bloco "Integrações".
+## Catálogo
 
-## Catálogo (os 10 mais buscados pelo mercado)
+| Agente | Função | Entrega principal |
+|---|---|---|
+| `ventura.vendas` | SDR / Vendas | prospecção, follow-up e pipeline |
+| `ventura.marketing` | Marketing | estratégia, conteúdo, SEO e funil |
+| `ventura.suporte` | Atendimento | tickets, CSAT e knowledge base |
+| `ventura.recrutamento` | RH | triagem e entrevistas estruturadas |
+| `ventura.dados` | Dados / BI | SQL, dashboards e relatórios |
+| `ventura.engenharia` | Engenharia | code review, arquitetura e refactoring |
+| `ventura.financeiro` | Financeiro | fluxo de caixa e conciliação |
+| `ventura.projetos` | Projetos | planejamento, riscos e status |
+| `ventura.social` | Social media | calendário, copy e análise |
+| `ventura.juridico` | Jurídico / Compliance | contratos, LGPD e análise de risco |
 
-| # | Agente | Função | Entrega principal |
-|---|---|---|---|
-| 1 | [ventura.vendas](ventura.vendas.md) | SDR / Vendas | prospecção qualificada, sequência de follow-up, pipeline limpo |
-| 2 | [ventura.marketing](ventura.marketing.md) | Marketing de conteúdo | estratégia + calendário + copy com SEO e funil |
-| 3 | [ventura.suporte](ventura.suporte.md) | Suporte ao cliente | tickets resolvidos, CSAT alto, knowledge base |
-| 4 | [ventura.recrutamento](ventura.recrutamento.md) | Recrutamento & RH | triagem, entrevistas estruturadas, time-to-hire reduzido |
-| 5 | [ventura.dados](ventura.dados.md) | Análise de dados & BI | dashboards, SQL, relatórios com storytelling |
-| 6 | [ventura.engenharia](ventura.engenharia.md) | Engenharia de software | code review, arquitetura, refactoring seguro |
-| 7 | [ventura.financeiro](ventura.financeiro.md) | Financeiro & contabilidade | fluxo de caixa, contas a pagar/receber, conciliação |
-| 8 | [ventura.projetos](ventura.projetos.md) | Gestão de projetos | planejamento, sprints, riscos, status executivo |
-| 9 | [ventura.social](ventura.social.md) | Social media | calendário, copy, engajamento, análise por plataforma |
-| 10 | [ventura.juridico](ventura.juridico.md) | Jurídico & compliance | contratos, LGPD, análise de risco e conformidade |
+## Anatomia de um agente
 
-## Anatomia de cada agente
+Cada arquivo descreve:
 
-```
-1. Identidade        — nome (ventura.<função>), missão, tom de voz
-2. Domínio           — escopo de atuação, o que faz / não faz
-3. Regras de ouro    — princípios inegociáveis (dados, ética, segurança)
-4. Workflow          — pipeline operacional passo a passo
-5. Entradas e saídas — o que recebe, o que entrega (contrato)
-6. Métricas          — KPIs que o agente persegue
-7. Ferramentas       — integrações sugeridas (CRM, ERP, helpdesk...)
-8. Autonomia         — o que decide sozinho vs. o que sobe para humano
-9. Exemplo de uso    — prompt de ativação pronto
-```
+1. identidade e missão;
+2. domínio e limites;
+3. regras de operação;
+4. workflow;
+5. entradas e saídas;
+6. métricas;
+7. ferramentas e integrações sugeridas;
+8. autonomia e escalonamento humano;
+9. exemplo de ativação.
 
-## Como usar
+## Uso
 
 ```text
-1. Escolha o agente no catálogo.
-2. Copie o conteúdo do .md como system prompt.
-3. Forneça as variáveis obrigatórias (empresa, persona, contexto, acesso).
-4. Ative com o "Exemplo de uso" do próprio agente.
-5. Conecte as integrações sugeridas para autonomia real.
+1. Escolha um agente.
+2. Use o arquivo .md como system prompt ou base de configuração.
+3. Forneça contexto, objetivo e dados necessários.
+4. Conecte somente as ferramentas compatíveis com o ambiente utilizado.
+5. Mantenha ações de risco sob confirmação ou política explícita.
 ```
+
+## Arquitetura de eficiência
+
+O projeto usa o ciclo:
+
+**Explore → Compile → Replay → Regenerate**
+
+A ideia é transformar caminhos validados em regras e skills reutilizáveis, reduzindo redecisões e consumo desnecessário de contexto em tarefas recorrentes.
+
+## Segurança
+
+Prompts não substituem controles técnicos. Agentes conectados a e-mail, banco de dados, CRM, ERP, código ou sistemas financeiros devem operar com autenticação, autorização, logging, least privilege e validação no lado da ferramenta.
 
 ## Família Ventura
 
-| Projeto | Repositório | Foco |
-|---|---|---|
-| **Ventura Agents** | `ventura-agents` | agentes de negócio multi-função |
-| Autor Ventura | `autor-ventura` | super agente escritor (livros) |
-| Ventura Art | `ventura-art` | criação de vídeos multi-plataforma |
-| Ventura Pro | `ventura-pro` | soluções tecnológicas |
+- [Ventura Agents II](https://github.com/venturalabs-ai/ventura-agents-2)
+- [Ventura Pro](https://github.com/venturalabs-ai/ventura-pro)
+- [Autor Ventura](https://github.com/venturalabs-ai/autor-ventura)
+- [Ventura Art](https://github.com/venturalabs-ai/ventura-art)
+- [Ventura.SEG](https://github.com/venturalabs-ai/Ventura.SEG)
 
-Frase-guia do estúdio: **"Todo agente nasce de uma função; toda função, de
-uma entrega; toda entrega, de uma obrigação com o negócio."**
+## Licença
 
-## Arquitetura Token-Efficient & Regenerative
+MIT — consulte [LICENSE](LICENSE).
 
-Este sistema foi projetado sob três princípios fundamentais:
+## Autor
 
-1. **Economia de Tokens** — maximizar valor por token gasto  
-2. **Loop de Alto Rendimento** — cada ciclo deve justificar o consumo  
-3. **Comportamento Regenerativo** — o sistema se reconstrói melhor a cada execução
+Wemerson Mota de Oliveira — Ventura Labs AI
 
-### Ciclo Principal: Explore → Compile → Replay
-
-| Fase | Descrição | Consumo de Tokens |
-|------|-----------|-------------------|
-| **Explore** | Modelo forte descobre o melhor caminho | Alto (único) |
-| **Compile** | Transforma o caminho em skill determinística | Baixo |
-| **Replay** | Executa a skill sem raciocínio completo | Mínimo / Zero |
-| **Regenerate** | Quando o domínio muda, regenera a skill | Sob demanda |
-
-### Regras de Engenharia
-
-- **Token Budget** explícito por especialista e por etapa
-- **Context Engineering** + **Context Compaction** em todas as passagens
-- **Context Firewall** entre sub-agentes (cada um só recebe o necessário)
-- **Prefix Caching** com system prompt estável
-- **Yield-based Stop Condition** (para quando o valor não justifica mais tokens)
-- **Skill Distillation** após caminhos bem-sucedidos
-
-### Resultado esperado
-
-- Redução drástica de tokens em execuções recorrentes
-- Qualidade mantida ou superior
-- Sistema que se auto-otimiza com o uso
+[GitHub](https://github.com/venturalabs-ai) · [LinkedIn](https://www.linkedin.com/in/wemerson-mota-de-oliveira-81aa8226/)
