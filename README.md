@@ -1,8 +1,10 @@
 # Ventura Agents
 
-[![License](https://img.shields.io/github/license/venturalabs-ai/ventura-agents)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/venturalabs-ai/ventura-agents)](https://github.com/venturalabs-ai/ventura-agents/stargazers)
-[![Forks](https://img.shields.io/github/forks/venturalabs-ai/ventura-agents)](https://github.com/venturalabs-ai/ventura-agents/forks)
+[![License](https://img.shields.io/github/license/venturalabs-ai/ventura-agents1)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/venturalabs-ai/ventura-agents1)](https://github.com/venturalabs-ai/ventura-agents1/stargazers)
+[![Forks](https://img.shields.io/github/forks/venturalabs-ai/ventura-agents1)](https://github.com/venturalabs-ai/ventura-agents1/forks)
+
+> Repositório canônico atual: `venturalabs-ai/ventura-agents1`.
 
 Coleção de **10 agentes de IA especializados em funções de negócio**, estruturados como system prompts reutilizáveis e orientados a entregas, métricas, ferramentas e limites de autonomia.
 
@@ -47,11 +49,9 @@ Cada arquivo descreve:
 
 ## Arquitetura de eficiência
 
-O projeto usa o ciclo:
-
 **Explore → Compile → Replay → Regenerate**
 
-A ideia é transformar caminhos validados em regras e skills reutilizáveis, reduzindo redecisões e consumo desnecessário de contexto em tarefas recorrentes.
+Caminhos validados podem virar regras e skills reutilizáveis, reduzindo redecisões e contexto desnecessário em tarefas recorrentes.
 
 ## Segurança
 
@@ -61,9 +61,9 @@ Prompts não substituem controles técnicos. Agentes conectados a e-mail, banco 
 
 - [Ventura Agents II](https://github.com/venturalabs-ai/ventura-agents-2)
 - [Ventura Pro](https://github.com/venturalabs-ai/ventura-pro)
-- [Autor Ventura](https://github.com/venturalabs-ai/autor-ventura)
+- [Autor Ventura](https://github.com/venturalabs-ai/ventura.autor)
 - [Ventura Art](https://github.com/venturalabs-ai/ventura-art)
-- [Ventura.SEG](https://github.com/venturalabs-ai/Ventura.SEG)
+- [ventura.SEG](https://github.com/venturalabs-ai/ventura.SEG)
 
 ## Licença
 
