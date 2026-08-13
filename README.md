@@ -1,76 +1,38 @@
-# Ventura Agents
+# 📄 README Template Padrão
 
-[![License](https://img.shields.io/github/license/venturalabs-ai/ventura-agents1)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/venturalabs-ai/ventura-agents1)](https://github.com/venturalabs-ai/ventura-agents1/stargazers)
-[![Forks](https://img.shields.io/github/forks/venturalabs-ai/ventura-agents1)](https://github.com/venturalabs-ai/ventura-agents1/forks)
+## Preencher conforme o repositório
 
-> Repositório canônico atual: `venturalabs-ai/ventura-agents1`.
+# Nome do Repositório
 
-Coleção de **10 agentes de IA especializados em funções de negócio**, estruturados como system prompts reutilizáveis e orientados a entregas, métricas, ferramentas e limites de autonomia.
+> **Descrição curta do que este repositório faz**
 
-## Catálogo
+## 🛠 Tecnologias
 
-| Agente | Função | Entrega principal |
-|---|---|---|
-| `ventura.vendas` | SDR / Vendas | prospecção, follow-up e pipeline |
-| `ventura.marketing` | Marketing | estratégia, conteúdo, SEO e funil |
-| `ventura.suporte` | Atendimento | tickets, CSAT e knowledge base |
-| `ventura.recrutamento` | RH | triagem e entrevistas estruturadas |
-| `ventura.dados` | Dados / BI | SQL, dashboards e relatórios |
-| `ventura.engenharia` | Engenharia | code review, arquitetura e refactoring |
-| `ventura.financeiro` | Financeiro | fluxo de caixa e conciliação |
-| `ventura.projetos` | Projetos | planejamento, riscos e status |
-| `ventura.social` | Social media | calendário, copy e análise |
-| `ventura.juridico` | Jurídico / Compliance | contratos, LGPD e análise de risco |
+- Linguagem: [Python/TypeScript/Etc.]
+- Framework: [Nome do framework]
+- Ferramentas: [Ferramentas usadas]
 
-## Anatomia de um agente
+## 🚀 Quick Start
 
-Cada arquivo descreve:
-
-1. identidade e missão;
-2. domínio e limites;
-3. regras de operação;
-4. workflow;
-5. entradas e saídas;
-6. métricas;
-7. ferramentas e integrações sugeridas;
-8. autonomia e escalonamento humano;
-9. exemplo de ativação.
-
-## Uso
-
-```text
-1. Escolha um agente.
-2. Use o arquivo .md como system prompt ou base de configuração.
-3. Forneça contexto, objetivo e dados necessários.
-4. Conecte somente as ferramentas compatíveis com o ambiente utilizado.
-5. Mantenha ações de risco sob confirmação ou política explícita.
+```bash
+# Instruções de setup
+git clone https://github.com/venturalabs-ai/[repo-name].git
+cd [repo-name]
+# Comandos de instalação
 ```
 
-## Arquitetura de eficiência
+## 📦 Licença
 
-**Explore → Compile → Replay → Regenerate**
+[MIT License](LICENSE)
 
-Caminhos validados podem virar regras e skills reutilizáveis, reduzindo redecisões e contexto desnecessário em tarefas recorrentes.
+## 🤝 Como Contribuir
 
-## Segurança
+1. Fork o repositório
+2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'feat: adicionar nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
 
-Prompts não substituem controles técnicos. Agentes conectados a e-mail, banco de dados, CRM, ERP, código ou sistemas financeiros devem operar com autenticação, autorização, logging, least privilege e validação no lado da ferramenta.
+## 📞 Contato
 
-## Família Ventura
-
-- [Ventura Agents II](https://github.com/venturalabs-ai/ventura-agents-2)
-- [Ventura Pro](https://github.com/venturalabs-ai/ventura-pro)
-- [Autor Ventura](https://github.com/venturalabs-ai/ventura.autor)
-- [Ventura Art](https://github.com/venturalabs-ai/ventura-art)
-- [ventura.SEG](https://github.com/venturalabs-ai/ventura.SEG)
-
-## Licença
-
-MIT — consulte [LICENSE](LICENSE).
-
-## Autor
-
-Wemerson Mota de Oliveira — Ventura Labs AI
-
-[GitHub](https://github.com/venturalabs-ai) · [LinkedIn](https://www.linkedin.com/in/wemerson-mota-de-oliveira-81aa8226/)
+- GitHub: [@venturalabs-ai](https://github.com/venturalabs-ai)

@@ -78,7 +78,7 @@ projeto · CI · stack e versões.
 ## Ferramentas
 
 GitHub/GitLab (reviews, CI) · Ruff/Black/mypy/pyright (Python) ·
-ESLint/Prettier (JS/TS) · SonarQube/CodeClimate · Snyk/Dependabot ·
+ESLint/Prettier (JS/TS) · CodeClimate · Snyk/Dependabot ·
 pytest/Jest · ChatGPT/Claude via API (análise de diff).
 
 ## Autonomia
